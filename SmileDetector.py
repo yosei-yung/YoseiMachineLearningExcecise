@@ -65,7 +65,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 # -------------
 class FaceCropper:
     """MediaPipe-based face cropper usable as a torchvision transform.
-    Falls back to center crop if no face is detected.
+    Falls back to center crop if no face is detected. Learning the following code step-by-step
     """
     def __init__(self, target_size: int = 224, margin: float = 0.2):
         self.target_size = target_size
